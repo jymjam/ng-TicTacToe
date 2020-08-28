@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "tsapp-dff34": {
+      "hosting": {
+        "ngTicTacToe": [
+          "tsapp-dff34"
+        ]
+      }
+    }
+  }
+}

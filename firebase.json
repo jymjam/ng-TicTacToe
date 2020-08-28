@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "ngTicTacToe",
+      "public": "dist/ngTicTacToe",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<h1>TIC TAC TOE</h1>
+<button nbButton outline status="danger" (click)='newGame()' >New Game</button>
+
+
+<h2 *ngIf="winner=='X'" class="text-success">
+  Player {{ winner }} wins!
+</h2>
+<h2 *ngIf="winner=='O'" class="text-info">
+  Player {{ winner }} wins!
+</h2>
+
+<h5>
+  current player: {{Player}}
+</h5>
+
+<main>
+  <app-square *ngFor="let val of squares; let i = index"
+    [value]='val'
+    (click)='userMove(i)'>
+  </app-square>
+</main>
+
+
